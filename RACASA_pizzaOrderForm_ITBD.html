@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title> 
+	<style>
+body {
+			font-family: Consolas, sans-serif;
+			background-color: #A9907E;
+			background-image: style="C:\Users\Admin\Documents\BURGER";
+}
+
+h1 {
+			text-align: center;
+			color: BLACK;
+			margin-top: 30px;
+
+      
+}
+
+form {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: #F3DEBA;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+		
+label {
+			display: block;
+			font-size: 20PX;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: BLACK;
+}
+        
+img{
+			width:fit-content:auto;
+			height:300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+			
+			
+}
+		input[type="text"],
+		select,
+		textarea {
+			width: 100%;
+			padding: 6px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 2px solid BLACK;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin-right: 30px;
+		}
+		button[type="submit"],
+		button[type="reset"] {
+			background-color: black;
+			color: #f0f0f0;
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		button[type="submit"]:hover,
+		button[type="reset"]:hover {
+		background-color: #C0C0C0	;
+  }
+  
+</style>
+<h1></h1>
+	<form action="#" method="post">
+		<h2 style="text-align:center;">CUSTOMER INFORMATION</h2>
+		<label for="fullname">FULL NAME:</label>
+		<input type="text" id="fullname" name="fullname" required>
+
+		<label for="address">COMPLETE ADDRESS:</label>
+		<input type="text" id="address" name="address" required>
+
+		<label for="contact">CONTACT NUMBER:</label>
+		<input type="text" id="contact" name="contact" required>
+
+		<label for="email">EMAIL:</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="directions">DIRECTION TO THE PLACE:</label>
+		<textarea id="directions" name="directions"></textarea>
+
+		<h2 style="text-align:center;">ORDER INFORMATION</h2>
+		<h3>BURGERS</h3>
+		<p>CHOOSE YOUR BURGER:</p>
+		
+		<label for="single">Single Patty</label>
+		<input type="radio" id="double" name="burger" value="double patty"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Sing;le.jpg" alt="Burger">
+		<label type="radio" for="double">Double Patty</label>
+		<input type="radio" id="double" name="burger" value="double patty"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Double.jpg" alt="Burger">
+
+		<p>SELECT YOUR TOPPINGS:</p>
+		<input type="checkbox" id="cheese" name="topping[]" value="coleslaw"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Cheese.jpg" alt="Burger">
+		<label for="cheese">Cheese</label>
+		
+		<input type="checkbox" id="coleslaw" name="topping[]" value="coleslaw"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\coleslaw.jpg" alt="Burger">
+		<label for="coleslaw">Coleslaw</label>
+
+		<input type="checkbox" id="tomato" name="topping[]" value="tomato"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Tomato.jpg" alt="Burger">
+		<label for="tomato">Tomato</label>
+
+		<input type="checkbox" id="onion" name="topping[]" value="onion"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Onion.jpg" alt="Burger">
+		<label for="onion">Onion</label>
+
+		<input type="checkbox" id="cucumber" name="topping[]" value="cucumber"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Cucumber.jpg" alt="Burger">
+		<label for="cucumber">Cucumber</label>
+
+		<input type="checkbox" id="bacon" name="topping[]" value="bacon"><img class="Pat" src="C:\Users\Admin\Documents\RACASA_IMAGES_ITBD\Bacon.jpg" alt="Burger">
+		<label for="bacon">Bacon</label>
+    <b><h3>CHOOSE YOUR BUN:</h3></b>
+		<select id="bun" name="bun" required>
+			<option value="white bun">White Bun</option>
+			<option value="wheat bun">Wheat Bun</option>
+			<option value="honey oat">Honey Oat</option>
+			<option value="sugar-free">Sugar-free</option>
+		</select>
+
+		<label for="burger-quantity">QUANTITY:</label>
+		<input type="number" id="burger-quantity" name="burger-quantity" required>
+    <br></br>
+    <form>
+      <label for="sauce">PASTA:</label>
+      <select id="sauce" name="sauce">
+        <option value="carbonara">Carbonara</option>
+        <option value="pesto">Pesto</option>
+        <option value="spaghetti">Spaghetti</option>
+      </select>
+      
+      <label for="add-ons">AD-ONS:</label>
+      <input type="checkbox" id="extra-cheese" name="extra-cheese" value="extra-cheese">
+      <label for="extra-cheese">Extra Cheese</label>
+      <input type="checkbox" id="extra-sauce" name="extra-sauce" value="extra-sauce">
+      <label for="extra-sauce">Extra Sauce</label>
+      
+	  <label for="quantity">QUANTITY  <u>(Per Box):</u></label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+      
+
+		<h2 style="text-align:center;">FRIES</h2>
+		<label for="size">Size:</label>
+		<select id="size" name="size">
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="large">Large</option>
+		</select>
+		<label for="flavor">Flavor:</label>
+		<select id="flavor" name="flavor">
+			<option value="bbq">BBQ</option>
+			<option value="cheese">Cheese</option>
+			<option value="sour-cream">Sour Cream</option>
+		</select>
+		<label for="fries-quantity">QUANTITY:</label>
+		<input type="number" id="fries-quantity" name="fries-quantity" min="1" value="1">
+
+		<h2 style="text-align:center;">DRINKS</h2>
+		<label for="drink-type">Drink Type:</label>
+		<select id="drink-type" name="drink-type">
+			<b><option value="soda">Soda</option>
+			<option value="juice">Juice</option>
+        <option value="water">Water</option></b>
+		</select>
+		<label for="drink-size">Size:</label>
+		<select id="drink-size" name="drink-size">
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="large">Large</option>
+		</select>
+		<label for="drink-quantity">QUANTITY:</label>
+		<input type="number" id="drink-quantity" name="drink-quantity" min="1" value="1">
+
+    <br></br>
+    <u><label for="delivery-method" style="text-align:center;">DELIVERY or PICK-UP:</label></u>
+		<input type="radio" id="delivery" name="delivery-method" value="delivery" style="text-align:center;">
+		<label for="delivery">Delivery</label>
+		<input type="radio" id="pick-up" name="delivery-method" value="pick-up">
+		<label for="pick-up">Pick-up</label>
+      <h3><u>SUGGESTIONS</u></h3>
+	  <h4>(In what way can we make the purchase form better?)</h4>
+		<label for="feedback"></label>
+		<textarea id="feedback" name="feedback"></textarea>
+    <button type="submit">Submit Order</button>
+		<button type="reset">Clear Form</button>
+</div>
+</body>
+</html>
